@@ -18,7 +18,7 @@ async function createTag(orderid) {
     parameter: [
       {
         key: "trackingId",
-        type: "PageView",
+        type: "template",
         value: "UA-1234-5",
       }
     ]
