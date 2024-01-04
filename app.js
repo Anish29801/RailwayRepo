@@ -7,7 +7,7 @@ const createTag = require('./tagCreater.js');
 app.use(express.json());
 
 app.get("/",(req,res)=>{
-    res.send("Welcome to Nexlerate Solutions !");
+    res.send("Welcome to the Nodejs Server")
 })
 
 app.post("/",(req,res)=>{
