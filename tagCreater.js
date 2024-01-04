@@ -1,10 +1,6 @@
 const { google } = require('googleapis');
 const { JWT } = require('google-auth-library');
 
-// Replace these values with your own
-const keyFilePath = 'keyfile.json';
-const gtmContainerId = '173799065'; // Replace with your GTM container ID
-
 async function createTag(orderid) {
   const auth = new JWT({
     keyFile: 'keyfile.json',
@@ -30,8 +26,8 @@ async function createTag(orderid) {
 
   try {
     const response = await tagManager.accounts.containers.workspaces.tags.create({
-      path: `accounts/6210496641/containers/173799065/workspaces/2/tags`,
-      parent: "accounts/6210496641/containers/173799065/workspaces/2",
+      path: `accounts/6005895175/containers/58633566/workspaces/18/tags`,
+      parent: "accounts/6005895175/containers/58633566/workspaces/18",
       requestBody: tagBody,
     });
 
